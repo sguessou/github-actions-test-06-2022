@@ -26,4 +26,6 @@ jobs:
         with:
           who-to-greet: Saad G.
       - name: Log Greeting Time
-        run: echo "${{ steps.greet.outputs.time }}"
+        run: |
+          echo "Simple JS Action"
+          echo "${{ steps.greet.outputs.time }}"
